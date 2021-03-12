@@ -8,11 +8,22 @@
     <H1 class="txt">Bienvenue, sur la gestion des bidons de gel hydroalcoolique.</H1>
     </head>
     <body>
-        <p class="txt">Vous pouvez vérifier le niveau des différentes bonbonnes ci-dessous.</p>
+    <p class="txt">Vous pouvez vérifier le niveau des différentes bonbonnes ci-dessous.</p>
         <table class="tabl_bidon"><tr><td>
         <p>Bidon n°1</p>
-        <?php 
-                $a = 5;
+	<?php
+		function read($csv){
+            $file = fopen($csv, 'r');
+            while (!feof($file) ) {
+                $line[] = fgetcsv($file, 1024);
+            }
+            fclose($file);
+            return $line;
+        }
+		$csv = 'bouteille.csv';
+        $csv = read($csv);
+		
+                $a = $csv[1][2];
                 if ($a < 100 || $a == 100) {
                     if( $a > 75)
                         echo '<img src="image/fiole_100.png"/>';}
@@ -33,7 +44,7 @@
         <td><p class="invisble">Bidon n°x</td>
         <td><p>Bidon n°2</p>
         <?php 
-                $a = 5;
+                $a = $csv[2][2];
                 if ($a < 100 || $a == 100) {
                     if( $a > 75)
                         echo '<img src="image/fiole_100.png"/>';}
@@ -53,7 +64,7 @@
             ?>   
         <tr><td><p>Bidon n°3</p>
         <?php 
-                $a = 5;
+                $a = $csv[3][2];
                 if ($a < 100 || $a == 100) {
                     if( $a > 75)
                         echo '<img src="image/fiole_100.png"/>';}
@@ -74,7 +85,7 @@
         <td><p class="invisble">Bidon n°x</td>
         <td><p>Bidon n°4</p>
         <?php 
-                $a = 5;
+                $a = $csv[4][2];
                 if ($a < 100 || $a == 100) {
                     if( $a > 75)
                         echo '<img src="image/fiole_100.png"/>';}
