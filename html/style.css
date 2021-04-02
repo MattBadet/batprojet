@@ -4,28 +4,10 @@ head{
         font-size: 40%;
 }
 
-.header{
-    height: 5%;
-    margin: 0%;
-    margin: 0; height: 0;   left: 0;    right: 0;   padding: 0;
-    text-align: center;
-    position: absolute;
-}
-
-.bott{
-    height: 5%;
-    margin: 0%;
-    margin: 0; bottom: 0;   left: 0;    right: 0;   padding: 0;
-    text-align: center;
-    position: absolute;
-}
-
 a{
     color: black;
 }
 
-
-}
 .boutonbatA {
     width: 20px;
     height: 20px;
@@ -41,10 +23,32 @@ a{
 }
 
 h1{
-    font-size: 110%;
+    font-size: 120%;
+}
+
+p{
+    font-size: 120%;
 }
 
 html {
     background: linear-gradient(to bottom right, grey, darkgrey);
+    background-attachment: fixed;
+    font-family: Helvetica; 
   }
   
+.tabl_bidon {
+    margin : auto;
+}
+
+.invisble {
+    opacity: 0;
+}
+
+.bott {
+    text-align: center;
+    font-size: 80%;
+}
+
+.txt {
+    text-align: center;
+}
