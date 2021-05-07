@@ -1,0 +1,79 @@
+html {
+    background-image: url("image/background7.jpg") ;
+    background-attachment: fixed;
+    font-family: Helvetica;
+}
+
+head{font-family: Helvetica, sans-serif;}
+
+body{margin-top: 20%;}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+}
+
+.flacon{
+    width: 100%;
+    height: 250px;
+}
+
+h1{
+    font-size: 120%;
+    font-family: Helvetica;
+}
+
+p{
+    font-size: 120%;
+    font-family: Helvetica;
+}
+
+.txt {
+    text-align: center;
+}
+
+.larg{
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+.menu {
+    background-image: url("image/background3.jpg") ;
+    top:0 ; left:0; right:0; 
+    position: fixed;
+}
+
+.petit{
+    width: 8%;
+    height: 8%;
+}
+
+.right{
+    position: fixed;
+    right: 20px;
+    top: 4.5%;
+}
+
+.middle{
+    position: fixed;
+    left: 30%;
+    top: 2.5%;
+}
+
+#conteneur img{max-width:70%;}
+
+#global #gauche {
+    float: left;
+    margin-left: 2%;
+    margin-top: 8%;
+    width: 8%;
+}
+
+#global #droit {
+    float: right;
+    margin-right: 1%;
+    max-width: 80%;
+
